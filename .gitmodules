@@ -1,0 +1,3 @@
+[submodule "mint_site"]
+	path = mint_site
+	url = https://github.com/RektInPeace/mint_site.git
