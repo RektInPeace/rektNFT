@@ -50,12 +50,6 @@ contract ImageTest is ERC721URIStorage {
         _setTokenURI(tokenId, uri);
     }
 
-
-    function test() internal returns (bool) {
-
-    }
-
-
     function createSVG() internal pure returns (string memory){   
         return string(abi.encodePacked('data:image/svg+xml;base64,', 
         Base64.encode(bytes(string(abi.encodePacked(
