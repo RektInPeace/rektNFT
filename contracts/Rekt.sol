@@ -15,8 +15,6 @@ import "@openzeppelin/contracts/utils/Base64.sol";
 contract Rekt is ERC721URIStorage {
     using Counters for Counters.Counter;
     using Strings for uint256;
-    using Strings for address;
-    using Strings for uint;
 
     struct RektDetails {
         address rektAddress;

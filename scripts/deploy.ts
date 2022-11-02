@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   const Rekt = await ethers.getContractFactory("Rekt");
-  const rekt = await Rekt.deploy("localhost:5000/api/tokenId/");
+  const rekt = await Rekt.deploy("https://rektinpeace.herokuapp.com/goerli/token/");
 
   await rekt.deployed();
   console.log(`Rekt Deployed to ${rekt.address}`);
