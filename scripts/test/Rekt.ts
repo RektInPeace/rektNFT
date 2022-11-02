@@ -2,7 +2,7 @@ import { time, loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { anyValue } from "@nomicfoundation/hardhat-chai-matchers/withArgs";
 import { expect } from "chai";
 import { ethers } from "hardhat";
-import { Rekt, ImageTest, Rekt__factory, ImageTest__factory } from "../../frontend/src/typchain-types/";
+import { Rekt, ImageTest, Rekt__factory, ImageTest__factory } from "../../mint-site/src/typchain-types/";
 import { Signer } from "ethers";
 
 
@@ -18,7 +18,7 @@ describe("Rekt", function () {
     imageTestContract = await ImageTest.deploy()
     Rekt = await ethers.getContractFactory("Rekt") as Rekt__factory
     
-    rektContract = await Rekt.deploy()
+    rektContract = await Rekt.deploy("https://localhost:5000/api/token/")
     ;[owner, addr1, addr2, addr3] = await ethers.getSigners()
 
   })
@@ -31,7 +31,7 @@ describe("Rekt", function () {
     it("Should set the right mint price", async function () {
       const price = await rektContract.mintPrice() // 
       const priceString = ethers.utils.formatEther(price);
-      expect(priceString).to.equal("0.2")
+      expect(priceString).to.equal("0.02")
     })
   })
 
@@ -54,18 +54,16 @@ describe("Rekt", function () {
       await rektContract.mintWithID(
         imageTestContract.address,
         1,
-        "Orange Color",
-        "https://ipfs.io/ipfs/QmbViGww8GWBHc1RnM4RgSCKavU1Ukh87X4dYFG9zhD9cY",
         "Rekt in Peace Orange"
         ,overrides
       )
-      const contractNames = await rektContract.contractNames(imageTestContract.address, 1)
-      const names: [string, string] = ['ImageTest','IMGT']
-      expect(contractNames[0]).to.equal(names[0])
-      expect(contractNames[1]).to.equal(names[1])
+      // const contractNames = await rektContract.contractNames(imageTestContract.address, 1)
+      // const names: [string, string] = ['ImageTest','IMGT']
+      // expect(contractNames[0]).to.equal(names[0])
+      // expect(contractNames[1]).to.equal(names[1])
       expect(await rektContract._tokenIds()).to.equal(1)
-      // console.log(await rektContract.tokenURI(1));
-      console.log(await imageTestContract.tokenURI(1));
+      console.log(await rektContract.tokenURI(1));
+      // console.log(await imageTestContract.tokenURI(1));
 
     })
   })

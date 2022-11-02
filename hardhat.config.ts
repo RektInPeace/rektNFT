@@ -3,7 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import '@typechain/hardhat'
 
 const GOERLI_PRIVATE_KEY = "a8d4a11d32b39d1a6b8744542d37d533b565747c5ebff135f7fb0562d58a918e"; // Dev Wallet
-const ALCHEMY_API_KEY = "npW907Hx_ZhvDYJkQFo3LeM-T3IyV2UO";
+const ALCHEMY_API_KEY = "oeNqFFRiojay_sJv6VMdBeH5A9kpEn7k";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",

@@ -4,6 +4,3 @@
 [submodule "homepage"]
 	path = homepage
 	url = https://github.com/RektInPeace/homepage.git
-[submodule "metadata_server"]
-	path = metadata_server
-	url = https://github.com/RektInPeace/metadata_server.git
