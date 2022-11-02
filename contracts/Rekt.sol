@@ -20,7 +20,6 @@ contract Rekt is ERC721URIStorage {
         address rektAddress;
         uint256 rektId;
         string message;
-
     }
 
     address public owner;
