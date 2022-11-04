@@ -590,8 +590,8 @@
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/Rekt.sol": {
-      "lastModificationDate": 1667537537846,
-      "contentHash": "d20881a8ff166f89b1202ded307b3045",
+      "lastModificationDate": 1667539626796,
+      "contentHash": "7739712f9f5d891cbe27817733783665",
       "sourceName": "contracts/Rekt.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -618,15 +618,10 @@
       },
       "imports": [
         "hardhat/console.sol",
-        "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
         "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
-        "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
         "@openzeppelin/contracts/access/Ownable.sol",
         "@openzeppelin/contracts/utils/Counters.sol",
-        "@openzeppelin/contracts/utils/Strings.sol",
-        "@openzeppelin/contracts/utils/Base64.sol",
         "@openzeppelin/contracts/security/ReentrancyGuard.sol"
       ],
       "versionPragmas": [
@@ -672,8 +667,8 @@
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/Nft.sol": {
-      "lastModificationDate": 1667537092778,
-      "contentHash": "c1354acb0d1e2c590436d2d866095d0e",
+      "lastModificationDate": 1667538791448,
+      "contentHash": "ed6f6ab7d9fe18977c7cfdbeebdf754f",
       "sourceName": "contracts/Nft.sol",
       "solcConfig": {
         "version": "0.8.17",

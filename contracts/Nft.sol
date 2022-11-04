@@ -1,27 +1,21 @@
 // // SPDX-License-Identifier: UNLICENSED
 
-// pragma solidity ^0.8.12;
+// pragma solidity ^0.8.0;
 
 // import "@openzeppelin/contracts/utils/Strings.sol";
 // import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 // import "@openzeppelin/contracts/access/Ownable.sol";
 // import "@openzeppelin/contracts/utils/Counters.sol";
 // import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-// // import "./IContent.sol";
+// import "./IContent.sol";
 
 // import "hardhat/console.sol";
 
 // contract MyNFT is ERC721, Ownable, ReentrancyGuard {
 //     using Counters for Counters.Counter;
 //     Counters.Counter private _tokenIds;
-//     mapping(uint256 => RektDetails) Content;
+//     mapping(uint256 => IContent.Item) Content;
 //     uint256 price = 5000000000000000;
-
-//     struct RektDetails {
-//         address rektAddress;
-//         uint256 rektId;
-//         string message;
-//     }
 
 //     address public renderingContractAddress;
 
@@ -29,11 +23,11 @@
 
 //     constructor() ERC721("MYNFT", "MYCOLLECTION") {
 
-//     function generateNFT(
+//     function GenerateNFT(
 //         string calldata ItemName,
 //         string calldata description,
 //         uint256[6] calldata Magic
-//     ) public payable {
+//     ) public payable virtual {
 //         require(msg.value >= price, "Not enough ETH sent; check price!");
 
 //         uint256 newItemId = _tokenIds.current();
@@ -42,7 +36,7 @@
 //             revert("This NFT is sold out.");
 //         }
 
-//         RektDetails memory Item;
+//         IContent.Item memory Item;
 
 //         Item.name = ItemName;
 //         Item.magic = Magic;

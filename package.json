@@ -27,6 +27,7 @@
   },
   "scripts": {
     "deploy": "hardhat run scripts/deploy/deploy.ts",
+    "test": "hardhat test",
     "push": "hardhat compile && git add . && git commit -m Yarn && git push"
 
   },
