@@ -61,6 +61,10 @@ contract Rekt is ERC721, Ownable, ReentrancyGuard {
         }
     }
 
+    function setPrice(uint newPrice) public onlyOwner nonReentrant {
+        _price = newPrice;
+    }
+
     function withdraw() public onlyOwner nonReentrant {
         (bool success, ) = msg.sender.call{
             value: address(this).balance
@@ -68,6 +72,8 @@ contract Rekt is ERC721, Ownable, ReentrancyGuard {
         require(success, "Withdrawal failed");
     }
 
+
+    // Public Getters
     function price() public view returns (uint) {
         return _price;
     }
@@ -76,11 +82,8 @@ contract Rekt is ERC721, Ownable, ReentrancyGuard {
         return _tokenIds.current();
     }
 
-    function setPrice(uint newPrice) public onlyOwner nonReentrant {
-        _price = newPrice;
-    }
-
-    function rektData(uint256 tokenId) public view {
+    function rektData(uint256 tokenId) public view returns (RektDetails memory) {
         _requireMinted(tokenId);
+        return _metadata[tokenId];
     }
 }

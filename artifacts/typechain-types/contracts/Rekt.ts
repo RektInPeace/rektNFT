@@ -383,7 +383,7 @@ export interface Rekt extends BaseContract {
     rektData(
       tokenId: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
-    ): Promise<[void]>;
+    ): Promise<[Rekt.RektDetailsStructOutput]>;
 
     renounceOwnership(
       overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -489,7 +489,7 @@ export interface Rekt extends BaseContract {
   rektData(
     tokenId: PromiseOrValue<BigNumberish>,
     overrides?: CallOverrides
-  ): Promise<void>;
+  ): Promise<Rekt.RektDetailsStructOutput>;
 
   renounceOwnership(
     overrides?: Overrides & { from?: PromiseOrValue<string> }
@@ -595,7 +595,7 @@ export interface Rekt extends BaseContract {
     rektData(
       tokenId: PromiseOrValue<BigNumberish>,
       overrides?: CallOverrides
-    ): Promise<void>;
+    ): Promise<Rekt.RektDetailsStructOutput>;
 
     renounceOwnership(overrides?: CallOverrides): Promise<void>;
 
