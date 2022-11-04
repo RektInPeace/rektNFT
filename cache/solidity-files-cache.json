@@ -706,8 +706,8 @@
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/Nft.sol": {
-      "lastModificationDate": 1667538791448,
-      "contentHash": "ed6f6ab7d9fe18977c7cfdbeebdf754f",
+      "lastModificationDate": 1667586344221,
+      "contentHash": "c598574f98d4e782ea3bf30a086339b0",
       "sourceName": "contracts/Nft.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -733,7 +733,9 @@
         }
       },
       "imports": [],
-      "versionPragmas": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
       "artifacts": []
     }
   }
