@@ -8,6 +8,8 @@ export type { contracts };
 export * as factories from "./factories";
 export type { Ownable } from "./@openzeppelin/contracts/access/Ownable";
 export { Ownable__factory } from "./factories/@openzeppelin/contracts/access/Ownable__factory";
+export type { IERC1155 } from "./@openzeppelin/contracts/token/ERC1155/IERC1155";
+export { IERC1155__factory } from "./factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory";
 export type { ERC721 } from "./@openzeppelin/contracts/token/ERC721/ERC721";
 export { ERC721__factory } from "./factories/@openzeppelin/contracts/token/ERC721/ERC721__factory";
 export type { ERC721URIStorage } from "./@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage";

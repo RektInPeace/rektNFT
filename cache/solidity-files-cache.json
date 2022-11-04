@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/ImageTest.sol": {
-      "lastModificationDate": 1667508440802,
+      "lastModificationDate": 1667541847797,
       "contentHash": "7e27c8f02664e9cbfec564b55e577976",
       "sourceName": "contracts/ImageTest.sol",
       "solcConfig": {
@@ -79,6 +79,41 @@
         "console"
       ]
     },
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Base64.sol": {
+      "lastModificationDate": 1667069583845,
+      "contentHash": "8f868da0a90e46a85baa348a896d1702",
+      "sourceName": "@openzeppelin/contracts/utils/Base64.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
       "lastModificationDate": 1667069583845,
       "contentHash": "cf46906c4035f51639a22265066a9e78",
@@ -149,78 +184,6 @@
         "Counters"
       ]
     },
-    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Base64.sol": {
-      "lastModificationDate": 1667069583845,
-      "contentHash": "8f868da0a90e46a85baa348a896d1702",
-      "sourceName": "@openzeppelin/contracts/utils/Base64.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Base64"
-      ]
-    },
-    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1667069583842,
-      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
-      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Ownable"
-      ]
-    },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
       "lastModificationDate": 1667069584689,
       "contentHash": "79ff1a7eb801a525aa315fb7a679eede",
@@ -264,8 +227,45 @@
         "ERC721"
       ]
     },
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1667069583842,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
-      "lastModificationDate": 1667344297396,
+      "lastModificationDate": 1667540437809,
       "contentHash": "8af32effd0536e2971ff8496812a5016",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
       "solcConfig": {
@@ -299,6 +299,41 @@
       ],
       "artifacts": [
         "ERC721URIStorage"
+      ]
+    },
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1667069583842,
+      "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Context.sol": {
@@ -373,6 +408,41 @@
         "IERC721"
       ]
     },
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1667069584689,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
       "lastModificationDate": 1667069584665,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
@@ -408,41 +478,6 @@
       ],
       "artifacts": [
         "ERC165"
-      ]
-    },
-    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1667069583842,
-      "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.1"
-      ],
-      "artifacts": [
-        "Address"
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
@@ -482,41 +517,6 @@
         "IERC721Metadata"
       ]
     },
-    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1667069584689,
-      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Receiver"
-      ]
-    },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
       "lastModificationDate": 1667069584665,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
@@ -552,10 +552,10 @@
         "IERC165"
       ]
     },
-    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/introspection/ERC165Checker.sol": {
-      "lastModificationDate": 1667069584665,
-      "contentHash": "964a5d1f03af86adc9de59cbf8f52444",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1667069584689,
+      "contentHash": "d5a8f6e07ca38ec384856cfe9f08a867",
+      "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
       "solcConfig": {
         "version": "0.8.17",
         "settings": {
@@ -580,18 +580,18 @@
         }
       },
       "imports": [
-        "./IERC165.sol"
+        "../../utils/introspection/IERC165.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "ERC165Checker"
+        "IERC1155"
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/Rekt.sol": {
-      "lastModificationDate": 1667539626796,
-      "contentHash": "7739712f9f5d891cbe27817733783665",
+      "lastModificationDate": 1667586180048,
+      "contentHash": "3bc6c44b89b5b0a9aa9524b275f6b8f8",
       "sourceName": "contracts/Rekt.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -620,6 +620,8 @@
         "hardhat/console.sol",
         "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
         "@openzeppelin/contracts/access/Ownable.sol",
         "@openzeppelin/contracts/utils/Counters.sol",
         "@openzeppelin/contracts/security/ReentrancyGuard.sol"
@@ -664,6 +666,43 @@
       ],
       "artifacts": [
         "ReentrancyGuard"
+      ]
+    },
+    "/Users/michael/Developer/Work/RektInPeace/rektNFT/node_modules/@openzeppelin/contracts/utils/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1667069584665,
+      "contentHash": "964a5d1f03af86adc9de59cbf8f52444",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
       ]
     },
     "/Users/michael/Developer/Work/RektInPeace/rektNFT/contracts/Nft.sol": {
