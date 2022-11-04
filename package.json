@@ -29,9 +29,9 @@
     "deploy": "hardhat run scripts/deploy/deploy.ts",
     "test": "hardhat test",
     "push": "hardhat compile && git add . && git commit -m Yarn && git push"
-
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.7.3"
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.3"
   }
 }
