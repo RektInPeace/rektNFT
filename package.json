@@ -26,8 +26,8 @@
     "typescript": ">=4.5.0"
   },
   "scripts": {
-    "deploy": "hardhat run script/deploy.ts",
-    "push": "git add . && git commit -m Yarn && git push"
+    "deploy": "hardhat run scripts/deploy/deploy.ts",
+    "push": "hardhat compile && git add . && git commit -m Yarn && git push"
 
   },
   "dependencies": {

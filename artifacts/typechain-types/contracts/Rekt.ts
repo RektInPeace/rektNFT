@@ -28,6 +28,20 @@ import type {
   PromiseOrValue,
 } from "../common";
 
+export declare namespace Rekt {
+  export type RektDetailsStruct = {
+    rektAddress: PromiseOrValue<string>;
+    rektId: PromiseOrValue<BigNumberish>;
+    message: PromiseOrValue<string>;
+  };
+
+  export type RektDetailsStructOutput = [string, BigNumber, string] & {
+    rektAddress: string;
+    rektId: BigNumber;
+    message: string;
+  };
+}
+
 export interface RektInterface extends utils.Interface {
   functions: {
     "_metadata(uint256)": FunctionFragment;
@@ -194,11 +208,13 @@ export interface RektInterface extends utils.Interface {
   events: {
     "Approval(address,address,uint256)": EventFragment;
     "ApprovalForAll(address,address,bool)": EventFragment;
+    "NewItem(address,uint256,tuple)": EventFragment;
     "Transfer(address,address,uint256)": EventFragment;
   };
 
   getEvent(nameOrSignatureOrTopic: "Approval"): EventFragment;
   getEvent(nameOrSignatureOrTopic: "ApprovalForAll"): EventFragment;
+  getEvent(nameOrSignatureOrTopic: "NewItem"): EventFragment;
   getEvent(nameOrSignatureOrTopic: "Transfer"): EventFragment;
 }
 
@@ -225,6 +241,18 @@ export type ApprovalForAllEvent = TypedEvent<
 >;
 
 export type ApprovalForAllEventFilter = TypedEventFilter<ApprovalForAllEvent>;
+
+export interface NewItemEventObject {
+  sender: string;
+  tokenId: BigNumber;
+  rektDetails: Rekt.RektDetailsStructOutput;
+}
+export type NewItemEvent = TypedEvent<
+  [string, BigNumber, Rekt.RektDetailsStructOutput],
+  NewItemEventObject
+>;
+
+export type NewItemEventFilter = TypedEventFilter<NewItemEvent>;
 
 export interface TransferEventObject {
   from: string;
@@ -577,6 +605,17 @@ export interface Rekt extends BaseContract {
       operator?: PromiseOrValue<string> | null,
       approved?: null
     ): ApprovalForAllEventFilter;
+
+    "NewItem(address,uint256,tuple)"(
+      sender?: null,
+      tokenId?: null,
+      rektDetails?: null
+    ): NewItemEventFilter;
+    NewItem(
+      sender?: null,
+      tokenId?: null,
+      rektDetails?: null
+    ): NewItemEventFilter;
 
     "Transfer(address,address,uint256)"(
       from?: PromiseOrValue<string> | null,
